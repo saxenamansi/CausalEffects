@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the content vertically */
+    margin: 20px auto; /* Center the entire grid on the page */
+    width: fit-content;
+}
+
+.image-grid img {
+    width: 100%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+
+/* Center the single image in its row */
+.single-image img {
+    grid-column: span 2; /* Single image spans two columns */
+    justify-self: center; /* Center the single image */
+    width: 700px;
+}
+
